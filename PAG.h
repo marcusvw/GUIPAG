@@ -24,6 +24,12 @@ typedef struct
     #define PAG_FOREGND PAG_WHITE
     #define PAG_BACKGND PAG_BLACK
 #endif
+#ifdef HW_M5CORE
+    #define PAG_BLACK 0x0000
+    #define PAG_WHITE 0xFFFF
+    #define PAG_FOREGND PAG_WHITE
+    #define PAG_BACKGND PAG_BLACK
+#endif
 
 class Page
 {
